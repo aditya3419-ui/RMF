@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditya's Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            color: #ffffff;
+            scroll-behavior: smooth;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background-color: #1c1c3c;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav .left {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #ff99cc;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ff99cc;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            min-height: 90vh;
+            padding: 40px 60px;
+        }
+
+        .leftSection {
+            max-width: 50%;
+            font-size: 2.5rem;
+            line-height: 1.5;
+        }
+
+        .purple {
+            background: linear-gradient(to right, #ff6ec4, #7873f5);
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        #element {
+            font-weight: bold;
+            font-size: 1.8rem;
+            background: linear-gradient(to right, #00f2fe, #4facfe);
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        .rightSection img {
+            width: 600px;
+            height: 600px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #ff99cc;
+            box-shadow: 0 0 25px rgba(255, 255, 255, 0.3);
+        }
+
+        .secondSection {
+            max-width: 85vw;
+            margin: auto;
+            padding: 60px 0;
+        }
+
+        .secondSection h2 {
+            font-size: 2.4rem;
+            text-align: center;
+            color: #ff99cc;
+            margin-bottom: 20px;
+        }
+
+        .secondSection p {
+            text-align: center;
+            font-size: 1.1rem;
+            margin-bottom: 40px;
+            line-height: 1.7;
+        }
+
+        .box {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 40px;
+        }
+
+        .vertical {
+            background-color: #1e1e3f;
+            padding: 25px;
+            border-radius: 10px;
+            width: 220px;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+            text-align: center;
+        }
+
+        .vertical img {
+            width: 40px;
+            margin-bottom: 15px;
+        }
+
+        .vertical-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .vertical-desc {
+            font-size: 0.9rem;
+            color: #ccc;
+        }
+
+        footer {
+            background: #0d0d2b;
+            padding: 50px 60px 20px;
+            color: #fff;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .footer-column {
+            flex: 1;
+            min-width: 220px;
+            margin: 20px 0;
+        }
+
+        .footer-column h4 {
+            margin-bottom: 15px;
+            color: #4facfe;
+        }
+
+        .footer-column ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-column ul li a {
+            text-decoration: none;
+            color: #ccc;
+        }
+
+        .footer-column ul li a:hover {
+            color: #ff99cc;
+        }
+
+        .footer-column input {
+            width: 80%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+            border: none;
+        }
+
+        .footer-column button {
+            background: #4facfe;
+            border: none;
+            padding: 8px 12px;
+            color: white;
+            border-radius: 4px;
+        }
+
+        .text-center {
+            text-align: center;
+            font-size: 14px;
+            color: #aaa;
+            margin-top: 40px;
+        }
+
+        .social-icons {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            color: white;
+            margin: 0 10px;
+            font-size: 24px;
+            transition: transform 0.3s;
+        }
+
+        .social-icons a:hover {
+            transform: scale(1.2);
+            color: #ff99cc;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="left">Aditya's Portfolio</div>
+        <ul class="right">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="firstSection">
+        <div class="leftSection">
+            Hi, my name is <span class="purple">Aditya</span><br>
+            and I'm a <span id="element"></span>
+        </div>
+        <div class="rightSection">
+            <!-- <img src="Picsart_25-08-07_10-19-12-025[1].jpg" alt="Profile"> -->
+             <!-- <img src="Picsart_25-08-07_10-22-29-408[1].jpg" alt=""> -->
+              <img src="Picsart_25-08-07_10-23-54-981[1].jpg" alt="">
+        </div>
+    </section>
+
+    <section class="secondSection">
+        <h2>My Learning Journey</h2>
+        <p>I started learning HTML, CSS, JavaScript, and C in 2024-2025 with the help of YouTube and my university. I’m
+            a beginner and exploring new skills every day.</p>
+        <div class="box">
+            <div class="vertical">
+                <img src="HTML-logo.png" alt="HTML">
+                <div class="vertical-title">HTML Developer (2025)</div>
+                <div class="vertical-desc">I started learning HTML in 2024. I can build simple pages using tags, images,
+                    and links.</div>
+            </div>
+            <div class="vertical">
+                <img src="CSS-logo.png" alt="CSS">
+                <div class="vertical-title">CSS Developer (2025)</div>
+                <div class="vertical-desc">I use CSS to style my web pages with colors, layouts, and animations.</div>
+            </div>
+            <div class="vertical">
+                <img src="JS-logo.png" alt="JavaScript">
+                <div class="vertical-title">JavaScript Developer (2025)</div>
+                <div class="vertical-desc">I use JavaScript for dynamic features and interactions.</div>
+            </div>
+            <div class="vertical">
+                <img src="C Language.jpeg" alt="C">
+                <div class="vertical-title">C Developer (2024)</div>
+                <div class="vertical-desc">I learned C basics, functions, loops and continue to explore problem solving.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-column">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Contact Info</h4>
+                <p><i class="fas fa-envelope"></i>aditya341926@gmail.com</p>
+                <p><i class="fas fa-phone"></i> +91-9798777405</p>
+            </div>
+            <div class="footer-column">
+                <h4>Stay Connected</h4>
+                <input type="email" placeholder="Your Email">
+                <button>Subscribe</button>
+            </div>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/aditya-kumar-7a3686293?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i
+                    class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/aditya3419-ui" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.instagram.com/a_d_i_t_h_y_a_1983?igsh=MWpobXAxbGFuNmw5dQ==" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p class="text-center">&copy; 2025 Aditya Kumar | All rights reserved.</p>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Digital Marketer', 'Graphic Designer'],
+            typeSpeed: 100,
+            backSpeed: 50,
+            loop: true
+        });
+    </script>
+</body>
+
+</html>
